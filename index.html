@@ -1,1 +1,115 @@
-Pemrograman menggunakan HTML, CSS, Javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Annisa Dian Pratiwi</title>
+
+  <link rel="icon" href="favicon.ico">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333; 
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #391032c8;
+      color: white;
+      padding: 20px;
+    }
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    table {
+      width: 60%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      border: 1px solid #cde4ff;
+    }
+
+    th, td {
+      border: 1px solid #4a90e2;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Annisa Dian Pratiwi</h1>
+    <h2>Mahasiswa Sistem Informasi</h2>
+    <h3>Telkom University</h3>
+  </header>
+
+  <section>
+    <img src="images/foto.jpg" alt="Foto Profil">
+
+    <p>Halo! Saya Dian. Saya mahasiswa yang tertarik pada dunia <strong>pengembangan web</strong> dan <em>UI/UX Design</em>.</p>
+
+    <h4>Tanggal & Waktu Saat Ini:</h4>
+    <p id="tanggal"></p>
+
+    <h4>Riwayat Pendidikan</h4>
+    <table>
+      <tr>
+        <th>Tahun</th>
+        <th>Institusi</th>
+      </tr>
+      <tr>
+        <td>2021 - Sekarang</td>
+        <td>Telkom University</td>
+      </tr>
+      <tr>
+        <td>2017 - 2020</td>
+        <td>SMA Negeri 1 Tenggarong</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <h5>🔗 Hubungi Saya</h5>
+    <a href=https://github.com/annisadian1919 target="_blank">GitHub</a> |
+    <a href="https://instagram.com/aannisadiann" target="_blank">Instagram</a>
+    <h6>© 2025 Annisa - All Rights Reserved</h6>
+  </footer>
+
+  <script>
+    function tampilkanTanggal() {
+      const sekarang = new Date();
+      document.getElementById("tanggal").innerHTML = sekarang.toLocaleString();
+    }
+    tampilkanTanggal();
+  </script>
+
+</body>
+</html>
